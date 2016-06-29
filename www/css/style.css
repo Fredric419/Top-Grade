@@ -1,0 +1,60 @@
+/* Empty. Add your own CSS if you like */
+.centered_div { /* Elements Center Style - Normal */
+    margin: auto;
+    width: 90%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.title_header /* Title Center */
+{
+    text-align:center;
+}
+
+.centered_div_smalltop { /* Elements Center Style - Small Top Margin for Lowest Grade Dropped */
+    margin: auto;
+    width: 90%;
+    position: relative;
+    margin-top: 3%;
+}
+
+::-webkit-input-placeholder { /* Set Input Placeholder Color */
+color: darkgray !important;
+}
+
+.borderInput{ /* Set Style of Input */
+    border: 1px solid #999999!important;  /* Border Width, Color */
+    border-radius:5px!important;          /* Border Radius */
+    width: 50px!important;                /* InputBox Width */
+    height: 40px!important;               /* InputBox Height */
+    padding: 5px!important;               /* InputBox text padding */
+    background-color:lightgray!important; /* InputBox Background Color */
+}
+
+.borderInput:focus{
+    border: 1px solid #896aeb!important;  /* InputBox Border Width, Color when Active */
+}
+
+.float-right { /* '%' symbol padding */
+    padding-left: 5px;
+}
+
+.item-input {
+    padding: 6px 0 5px 0!important;
+}
+
+.facebook-color /* Facebook Button Background color, right margin */
+{
+  background-color: #305991!important;
+  margin-right:5px;
+}
+.twitter-color  /* Twitter Button Background color, right margin */
+{
+  background-color: #2da8d4!important;
+  margin-right:5px;
+}
+.email-color    /* Email Button Background color, right margin */
+{
+  background-color: #728685!important;
+  margin-right:5px;
+}

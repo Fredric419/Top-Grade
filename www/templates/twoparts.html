@@ -1,0 +1,47 @@
+<ion-view view-title="Top Grade">
+  <ion-content>
+    <form ng-submit="doCalc()">
+      <div class="list centered_div">
+        <h3 class = "title_header">2+ Parts to My Final</h3>
+        <div class="item-input">
+          <span class="col-67">Current Grade</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.current" placeholder="(e.g. 92.4)">
+          <span class="float-right">%</span>
+        </div>
+        <div class="item-input">
+          <span class="col-67">Desired Grade</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.desired" placeholder="(e.g. 90)">
+          <span class="float-right">%</span>
+        </div>
+        <div class="item-input">
+          <span class="col-67">Final Weight</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.testweight" placeholder="(e.g. 10)">
+          <span class="float-right">%</span>
+        </div>
+        <div class="item-input">
+          <span class="col-67">Number of Parts on the Final</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.finalparts" ng-change="OnFianlPartsCountChange()" placeholder="(e.g. 2)">
+          <span class="float-right"></span>
+        </div>
+                <div class="item-input" ng-repeat="model in finalPartsModel">
+                  <span class="col-67">{{fianlpartsLabel[model]}}</span>
+                  <input id="finalpartsid_{{model}}" class="borderInput col-25" type="number" placeholder="(e.g. 88.5)">{{model.value}}
+                  <span class="float-right">%</span>
+                </div>
+        <div class="item-input">
+          <span class="col-67">Taken Final Parts</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.takenparts" ng-change="OnTakenPartsCountChange()" placeholder="(e.g. 1)">
+          <span class="float-right"></span>
+        </div>
+                <div class="item-input" ng-repeat="model in takenPartsModel">
+                  <span class="col-67">{{takenpartsLabel[model]}}</span>
+                  <input id="takenpartsid_{{model}}" class="borderInput col-25" type="number" placeholder="(e.g. 88.5)">{{model.value}}
+                  <span class="float-right">%</span>
+                </div>
+        <button class="button button-block button-royal">
+          Get Results
+        </button>
+        </div>
+    </form>
+  </ion-content>
+</ion-view>

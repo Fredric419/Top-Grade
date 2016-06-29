@@ -1,0 +1,22 @@
+<ion-view view-title="Top Grade">
+  <ion-content>
+    <form ng-submit="doCalc()">
+      <div class="list centered_div">
+        <h3 class = "title_header" >Class Points System</h3>
+        <div class="item-input">
+          <span class="col-75">Total Points</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.totalpoint" placeholder="(e.g 1200)">
+          <span class="float-right"></span>
+        </div>
+        <div class="item-input">
+          <span class="col-75">Final Exam Points</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.testpoint" placeholder="(e.g 200)">
+          <span class="float-right"></span>
+        </div>
+        <button class="button button-block button-royal">
+          Get Results
+        </button>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

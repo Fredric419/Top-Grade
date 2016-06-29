@@ -1,0 +1,27 @@
+<ion-view view-title="Top Grade">
+  <ion-content>
+    <form ng-submit="doCalc()">
+      <div class="list centered_div">
+        <h3 class = "title_header" >Final Grade Before Final</h3>
+        <div class="item-input">
+          <span class="col-67">Current Grade</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.before" placeholder="(e.g. 92.4)">
+          <span class="float-right">%</span>
+        </div>
+        <div class="item-input">
+          <span class="col-67">Desired Grade</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.gotfinal" placeholder="(e.g. 90)">
+          <span class="float-right">%</span>
+        </div>
+        <div class="item-input">
+          <span class="col-67">Percentage Final Exam is Worth</span>
+          <input class="borderInput col-25" type="number" ng-model="InputData.worth" placeholder="(e.g. 10)">
+          <span class="float-right">%</span>
+        </div>
+        <button class="button button-block button-royal">
+          Get Results
+        </button>
+        </div>
+    </form>
+  </ion-content>
+</ion-view>
